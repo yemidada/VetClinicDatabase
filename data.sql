@@ -14,4 +14,4 @@ INSERT INTO animals
 
 INSERT INTO animals 
     ("name", "date_of_birth", "escape_attempts", "neutered", "weight_kg") VALUES 
-    ('Devimon', '2017-05-17', 5, 't', 11);
+    ('Devimon', '2017-05-12', 5, 't', 11);
