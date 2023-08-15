@@ -27,7 +27,7 @@
 
 # 📖Vet clinic database: create animals table <a name="about-project"></a>
 
-**This involves setting up a relational database to establish the initial data arrangement for a veterinary clinic. Within this undertaking, I will generate a table dedicated to preserving details about animals, input a selection of data entries, and perform inquiries on this data.**
+**This is  a relational database to create the initial data structure for a vet clinic. In this project, I will create a table to store animals' information, insert some data into it, and query it.**
 
 
 
@@ -90,10 +90,10 @@ Clone this repository to your desired folder:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/yemidada/bootstore.git
+$ git clone https://github.com/yemidada/VetClinicDatabase.git
 
 # Go into the repository
-$ cd bootstore
+$ cd VetClinicDatabase
 
 # Install dependencies
 $ npm install
@@ -124,9 +124,7 @@ After you clone this repo to your desktop and install the dependencies, go to it
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-
-- [ ] **Improve the designs**
-- [ ] **Add more features**
+- [ ] **Add more query**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

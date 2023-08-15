@@ -1,7 +1,7 @@
 /*Queries that provide answers to the questions from all projects.*/
 
 
-select * from animals where name like '%mon'
+select * from animals where name like '%mon';
 select name from animals where date_part('year', date_of_birth) BETWEEN '2016' and '2019';
 select name from animals where neutered = true and escape_attempts < 3;
 select date_of_birth from animals where name = 'Agumon' or name = 'Pikachu';
