@@ -1,21 +1,43 @@
 /*Queries that provide answers to the questions from all projects.*/
 
-select count(*) from animals;
-
-select count(*) from animals where escape_attempts = 0;
-
-select  SUM(weight_kg)/count(*) as average from animals;
 
 
-select neutered from animals order by escape_attempts  desc limit 1;
+select a.name from animals a
+left join owners o 
+on o.id = a.owner_id where
+o.full_name='Melody Pond';
 
 
-SELECT species, MIN(weight_kg) AS min_weight, MAX(weight_kg) AS max_weight
-FROM animals
-GROUP BY species;
+select a.name from animals a
+left join species o 
+on o.id = a.species_id where
+o.name ='Pokemon';
 
-SELECT species, SUM(weight_kg)/count(*) as average
-FROM animals WHERE date_part('year', date_of_birth) BETWEEN '1990' and '2000'
-GROUP BY species;
+
+select a.name, o.full_name from animals a
+left join owners o
+on o.id = a.owner_id ;
+
+
+select a.name 
+from animals a
+left join owners o 
+on o.id = a.owner_id 
+left join species s
+on s.id = a.species_id 
+where o.full_name='Jennifer Orwell';
+
+
+
+select a.* from animals a
+left join owners o 
+on o.id = a.owner_id where
+o.full_name='Dean Winchester' and a.escape_attempts = 0;
+
+
+select o.full_name, count(*) as counter from animals a
+left join owners o 
+on o.id = a.owner_id 
+GROUP by o.full_name order by counter desc limit 1;
  
 

@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <h3><b>Vet clinic database: query and update animals table</b></h3>
+  <h3><b>Vet clinic database: query multiple tables</b></h3>
 
 </div>
 
@@ -25,7 +25,7 @@
 - [📝 License](#license)
 
 
-# 📖Vet clinic database: query and update animals table <a name="about-project"></a>
+# 📖Vet clinic database: query multiple tables <a name="about-project"></a>
 
 **This is  a relational database to create the initial data structure for a vet clinic. In this project, I will create a table to store animals' information, insert some data into it, and query it.**
 
