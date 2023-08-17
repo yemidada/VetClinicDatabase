@@ -38,6 +38,3 @@ UPDATE animals set owner_id = (select id from owners where full_name = 'Jennifer
 UPDATE animals set owner_id = (select id from owners where full_name = 'Bob') where name = 'Devimon' or  name = 'Plantmon';
 UPDATE animals set owner_id = (select id from owners where full_name = 'Melody Pond') where name = 'Charmander' or  name = 'Squirtle'  or  name = 'Blossom';
 UPDATE animals set owner_id = (select id from owners where full_name = 'Dean Winchester') where name = 'Angemon' or  name = 'Boarmon' ;
-
-
-
