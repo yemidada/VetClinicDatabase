@@ -39,5 +39,10 @@ select o.full_name, count(*) as counter from animals a
 left join owners o 
 on o.id = a.owner_id 
 GROUP by o.full_name order by counter desc limit 1;
+
+select  count(*) as counter, s.name from animals a
+left join species s 
+on s.id = a.species_id 
+GROUP by s.name;
  
 
