@@ -9,3 +9,5 @@ CREATE TABLE animals (
     "neutered" bool  NOT NULL,
     "weight_kg" numeric  NOT NULL
 );
+ALTER TABLE animals
+ADD COLUMN "species" varchar(100);

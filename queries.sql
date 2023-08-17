@@ -1,11 +1,21 @@
 /*Queries that provide answers to the questions from all projects.*/
 
+select count(*) from animals;
 
-select * from animals where name like '%mon';
-select name from animals where date_part('year', date_of_birth) BETWEEN '2016' and '2019';
-select name from animals where neutered = true and escape_attempts < 3;
-select date_of_birth from animals where name = 'Agumon' or name = 'Pikachu';
-select name, escape_attempts from animals where weight_kg > 10.5;
-select * from animals where neutered = true;
-select * from animals where name != 'Gabumon';
-select * from animals where weight_kg BETWEEN '10.4' and '17.3';
+select count(*) from animals where escape_attempts = 0;
+
+select  SUM(weight_kg)/count(*) as average from animals;
+
+
+select neutered from animals order by escape_attempts  desc limit 1;
+
+
+SELECT species, MIN(weight_kg) AS min_weight, MAX(weight_kg) AS max_weight
+FROM animals
+GROUP BY species;
+
+SELECT species, SUM(weight_kg)/count(*) as average
+FROM animals WHERE date_part('year', date_of_birth) BETWEEN '1990' and '2000'
+GROUP BY species;
+ 
+
