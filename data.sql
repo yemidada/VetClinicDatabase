@@ -94,3 +94,4 @@ INSERT INTO visits ("vet_id", "animal_id", "date_of_visit")
 					name = 'Charmander'),
 					'2021-02-24'
 					);
+
