@@ -1,27 +1,27 @@
 /* Database schema to keep the structure of entire database. */
 
-CREATE TABLE owners (
+CREATE TABLE vets (
     "id"  SERIAL PRIMARY KEY,
-    "full_name" varchar(200),
-    "age" int, 
+    "name" varchar(200),
+    "age" INT,
+    "date_of_graduation" date
 );
 
 
-CREATE TABLE species (
+CREATE TABLE specializations (
     "id"  SERIAL PRIMARY KEY,
-    "name" varchar(200)
+    "vet_id" INT,
+    "species_id" INT,
+    CONSTRAINT "specializations_species_id_fkey" FOREIGN KEY ("species_id") REFERENCES species("id"),
+    CONSTRAINT "specializations_vet_id_fkey" FOREIGN KEY ("vet_id") REFERENCES vets("id")
 );
 
 
-ALTER TABLE animals
-DROP COLUMN "species";
-
-ALTER TABLE animals
-ADD COLUMN species_id INT;
-
-ALTER TABLE animals ADD FOREIGN KEY ("species_id") REFERENCES species("id");
-
-ALTER TABLE animals
-ADD COLUMN owner_id INT;
-
-ALTER TABLE animals ADD FOREIGN KEY ("owner_id") REFERENCES owners("id");
+CREATE TABLE visits (
+    "id"  SERIAL PRIMARY KEY,
+    "vet_id" INT,
+    "animal_id" INT,
+    "date_of_visit" date,
+    CONSTRAINT "visits_vet_id_fkey" FOREIGN KEY ("vet_id") REFERENCES "public"."vets"("id"),
+    CONSTRAINT "visits_animal_id_fkey" FOREIGN KEY ("animal_id") REFERENCES "public"."animals"("id")
+);
