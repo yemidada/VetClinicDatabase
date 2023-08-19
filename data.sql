@@ -163,7 +163,7 @@ INSERT INTO visits ("vet_id", "animal_id", "date_of_visit")
 					id FROM animals
 				WHERE
 					name = 'Plantmon'),
-					'2021-08-10'
+					'2020-08-10'
 					);
 
 
