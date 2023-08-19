@@ -1,5 +1,6 @@
 /*Queries that provide answers to the questions from all projects.*/
 
+
 select a.name, vi.date_of_visit  from animals a
 left join visits vi
 on vi.animal_id = a.id
@@ -72,5 +73,11 @@ on vi.vet_id = ve.id
 where ve.name = 'Maisy Smith'
 GROUP by sp.name 
 order by counter desc limit 1;
+
+
+
+
+
+
 
 
