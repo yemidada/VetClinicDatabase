@@ -38,19 +38,12 @@ order by counter desc limit 1;
 
 
 select a.name, vi.date_of_visit  from animals a
-left join vets ve
-on vi.vet_id = ve.id
-where ve.name = 'Maisy Smith'
-order by date_of_visit asc limit 1;
-
-
-select a.name, vi.date_of_visit  from animals a
 left join visits vi
 on vi.animal_id = a.id
 left join vets ve
 on vi.vet_id = ve.id
-where ve.name = 'William Tatcher'
-order by vi.date_of_visit desc limit 1;
+where ve.name = 'Maisy Smith'
+order by date_of_visit asc limit 1;
 
 
 select a.*, ve.*, vi.date_of_visit  from animals a
@@ -58,6 +51,7 @@ left join visits vi
 on vi.animal_id = a.id
 left join vets ve
 on vi.vet_id = ve.id
+where date_of_visit is not NULL
 order by vi.date_of_visit desc limit 1;
 
 
