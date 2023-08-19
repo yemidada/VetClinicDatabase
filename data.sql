@@ -141,3 +141,152 @@ INSERT INTO visits ("vet_id", "animal_id", "date_of_visit")
 					name = 'Charmander'),
 					'2021-02-24'
 					);
+
+
+INSERT INTO visits ("vet_id", "animal_id", "date_of_visit")
+		VALUES(( SELECT DISTINCT
+				id FROM vets
+			WHERE
+				name = 'Maisy Smith'), ( SELECT DISTINCT
+					id FROM animals
+				WHERE
+					name = 'Plantmon'),
+					'2019-12-21'
+					);
+
+
+INSERT INTO visits ("vet_id", "animal_id", "date_of_visit")
+		VALUES(( SELECT DISTINCT
+				id FROM vets
+			WHERE
+				name = 'William Tatcher'), ( SELECT DISTINCT
+					id FROM animals
+				WHERE
+					name = 'Plantmon'),
+					'2021-08-10'
+					);
+
+
+INSERT INTO visits ("vet_id", "animal_id", "date_of_visit")
+		VALUES(( SELECT DISTINCT
+				id FROM vets
+			WHERE
+				name = 'Maisy Smith'), ( SELECT DISTINCT
+					id FROM animals
+				WHERE
+					name = 'Plantmon'),
+					'2021-04-07'
+					);
+
+
+
+INSERT INTO visits ("vet_id", "animal_id", "date_of_visit")
+		VALUES(( SELECT DISTINCT
+				id FROM vets
+			WHERE
+				name = 'Stephanie Mendez'), ( SELECT DISTINCT
+					id FROM animals
+				WHERE
+					name = 'Squirtle'),
+					'2019-09-29'
+					);
+
+
+
+INSERT INTO visits ("vet_id", "animal_id", "date_of_visit")
+		VALUES(( SELECT DISTINCT
+				id FROM vets
+			WHERE
+				name = 'Jack Harkness'), ( SELECT DISTINCT
+					id FROM animals
+				WHERE
+					name = 'Angemon'),
+					'2020-10-03'
+					);
+
+INSERT INTO visits ("vet_id", "animal_id", "date_of_visit")
+		VALUES(( SELECT DISTINCT
+				id FROM vets
+			WHERE
+				name = 'Jack Harkness'), ( SELECT DISTINCT
+					id FROM animals
+				WHERE
+					name = 'Angemon'),
+					'2020-11-04'
+					);
+
+
+INSERT INTO visits ("vet_id", "animal_id", "date_of_visit")
+		VALUES(( SELECT DISTINCT
+				id FROM vets
+			WHERE
+				name = 'Maisy Smith'), ( SELECT DISTINCT
+					id FROM animals
+				WHERE
+					name = 'Boarmon'),
+					'2019-01-24'
+					);
+
+
+INSERT INTO visits ("vet_id", "animal_id", "date_of_visit")
+		VALUES(( SELECT DISTINCT
+				id FROM vets
+			WHERE
+				name = 'Maisy Smith'), ( SELECT DISTINCT
+					id FROM animals
+				WHERE
+					name = 'Boarmon'),
+					'2019-05-15'
+					);
+
+
+
+INSERT INTO visits ("vet_id", "animal_id", "date_of_visit")
+		VALUES(( SELECT DISTINCT
+				id FROM vets
+			WHERE
+				name = 'Maisy Smith'), ( SELECT DISTINCT
+					id FROM animals
+				WHERE
+					name = 'Boarmon'),
+					'2020-02-27'
+					);
+
+
+
+INSERT INTO visits ("vet_id", "animal_id", "date_of_visit")
+		VALUES(( SELECT DISTINCT
+				id FROM vets
+			WHERE
+				name = 'Maisy Smith'), ( SELECT DISTINCT
+					id FROM animals
+				WHERE
+					name = 'Boarmon'),
+					'2020-08-03'
+					);
+
+
+
+INSERT INTO visits ("vet_id", "animal_id", "date_of_visit")
+		VALUES(( SELECT DISTINCT
+				id FROM vets
+			WHERE
+				name = 'Stephanie Mendez'), ( SELECT DISTINCT
+					id FROM animals
+				WHERE
+					name = 'Blossom'),
+					'2020-05-24'
+					);
+
+
+
+INSERT INTO visits ("vet_id", "animal_id", "date_of_visit")
+		VALUES(( SELECT DISTINCT
+				id FROM vets
+			WHERE
+				name = 'William Tatcher'), ( SELECT DISTINCT
+					id FROM animals
+				WHERE
+					name = 'Blossom'),
+					'2021-01-11'
+					);
